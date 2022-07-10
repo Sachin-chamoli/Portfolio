@@ -1,0 +1,58 @@
+import "./Contact.css"
+import Phone from "../../img/phone.png"
+import Email from "../../img/email.png"
+import Address from "../../img/address.png"
+import { useRef } from "react"
+import emailjs from '@emailjs/browser';
+
+const Contact = () => {
+    const formRef = useRef();
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        emailjs.sendForm('service_z1usacm', 'template_i00ys89', formRef.current, 'khB8L42hrjBq7iULv')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+
+    }
+  return (
+    <div className="c">
+      <div className="c-bg"></div>
+      <div className="c-wrapper">
+        <div className="c-left">
+            <h1 className="c-title">Let's discuss your project</h1>
+            <div className="c-info">
+               <div className="c-info-item">
+                    <img src={Phone} alt="" className="c-icon" />
+                    +91 8130644825 
+               </div> 
+               <div className="c-info-item">
+                    <img src={Email} alt="" className="c-icon" />
+                    sachinchamoli200@gmail.com 
+               </div> 
+               <div className="c-info-item">
+                    <img src={Address} alt="" className="c-icon" />
+                    House no= 187 Dda Flats Dakshin Puri Ambedkar Nagar New Delhi 110062 
+               </div> 
+            </div>
+        </div>
+        <div className="c-right">
+            <p className="c-desc">
+                <b>Lorem ipsum dolor sit amet consectetur.</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa numquam recusandae.
+            </p>
+            <form ref = {formRef} onSubmit={handleSubmit}>
+                <input type="text" placeholder="Name" name="user_name" />
+                <input type="text" placeholder="Subject" name="user_subject" />
+                <input type="text" placeholder="Email" name="user_email" />
+                <textarea placeholder="Message" name="message"cols="30" rows="5"></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Contact
