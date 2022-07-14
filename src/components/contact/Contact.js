@@ -22,9 +22,10 @@ const Contact = () => {
         }, (error) => {
             console.log(error.text);
         });
+
     }
   return (
-    <div className="c">
+    <div id="C" className="c">
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">

@@ -3,7 +3,7 @@ import Me from "../../img/me.png"
 
 const Introo = () => {
   return (
-    <div className='i'>
+    <div id="I" className='i'>
       <div className="i-left">
         <div className="i-left-wrapper">
             <h2 className='i-intro'>Hello, My name is</h2>

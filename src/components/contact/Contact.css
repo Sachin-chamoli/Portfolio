@@ -49,11 +49,11 @@ form{
     margin-top: 20px;
 }
 input{
-    width: 50%;
+    width: 45%;
     height: 50px;
     border: none;
     border-bottom: 1px solid black;
-    margin: 10px 0px;
+    margin: 10px 5px;
     padding-left: 10px;
     font-size: 14px;
 }
@@ -81,6 +81,9 @@ button{
     margin-top: 20px;
 }
 @media screen and (max-width: 480px){
+    /* .c{
+        margin-top: 90px;
+    } */
     .c-wrapper{
         flex-direction: column;
         padding: 0px 50px;

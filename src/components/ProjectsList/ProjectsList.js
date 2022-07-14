@@ -4,7 +4,7 @@ import {products} from "../../data"
 
 const ProjectsList = () => {
   return (
-    <div className="pl">
+    <div id="P" className="pl">
         <div className="pl-texts">
             <h1 className="pl-title">Here are some of the Projects</h1>
             <p className="pl-desc">
