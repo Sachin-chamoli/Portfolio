@@ -18,6 +18,9 @@
     justify-content: space-between;
     width: 100%;
 }
+.pl-list-item{
+    box-shadow: 0 0 10px black;
+}
 @media  screen and (max-width: 480px) {
     .pl{
         padding: 10px;

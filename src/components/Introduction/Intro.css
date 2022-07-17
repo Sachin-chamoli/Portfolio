@@ -59,10 +59,11 @@
 }
 
 .i-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 120%;
+    height: auto ;
+    object-fit: contain;
     position: absolute;
+    margin-top: -50px;
 }
 .i-bg{
     clip-path: polygon(100% 0%, 100% 54%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
@@ -70,6 +71,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    overflow: hidden;
     top: 0;
     right: 0;
 }

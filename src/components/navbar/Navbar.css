@@ -3,4 +3,43 @@
     position: fixed;
     width: 100%;
     z-index: 2;
+    background-color: rgb(83, 73, 73);
+}
+.navbar-brand{
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+.navbar-brand:hover{
+    color: rgb(10, 215, 10);
+}
+.nav-link:hover{
+    color: rgb(10, 215, 10);
+}
+
+
+@media screen and (max-width: 480px) {
+    .navbar-brand{
+        display: none;
+    }
+    .navbar{
+        height: 50px;
+    }
+    .navbar-toggler{
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .navbar-toggler-icon{
+        height: 30px;
+        width: 30px;
+        padding: 10px;
+        
+    }
+    .container-fluid{
+        background-color:rgb(83, 73, 73) ;
+    }
 }

@@ -12,9 +12,10 @@ const ProjectsList = () => {
             </p>
         </div>
         <div className="pl-list">
-          {products.map(item =>(
+            {products.map(item =>(
             <Project key = {item.id} img = {item.img} link ={item.link}/>
           ))}
+          
         </div>
 
     </div>
