@@ -8,9 +8,10 @@ const Project = (props) => {
         <div className="p-circle"></div>
         <div className="p-circle"></div>
       </div>
-      <a href={props.link} target="_blank" rel="noreferrer">
+      <a href={props.link} target="_blank" rel="noreferrer" >
         <img src={props.img} alt="Loading" className="p-img" />
       </a>
+      <p className="p-desc">{props.desc}</p>
     </div>
   )
 }

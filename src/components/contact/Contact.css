@@ -81,9 +81,7 @@ button{
     margin-top: 20px;
 }
 @media screen and (max-width: 480px){
-    /* .c{
-        margin-top: 90px;
-    } */
+ 
     .c-wrapper{
         flex-direction: column;
         padding: 0px 50px;
@@ -92,8 +90,9 @@ button{
         font-size: 32px;
     }
     .c-info-item{
-        margin: 20px 0px;
+        margin: 15px 0px;
         width: 100%;
+        font-size: 15px;
     }
 
     form{
