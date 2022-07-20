@@ -11,15 +11,18 @@
 }
 
 .c-wrapper{
-    padding: 50px;
+    padding: 50px 50px 10px 50px;
     display: flex;
+    /* border: 1px solid; */
 }
 .c-left{
     flex: 1;
+    /* border: 2px solid blue; */
 }
 .c-right{
     flex: 1;
     display: flex;
+    /* border: 2px solid blue; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -42,7 +45,6 @@
 }
 .c-desc{
     font-weight: 200;
-
 }
 
 form{
@@ -77,11 +79,55 @@ button{
   border-radius: 10px;
 }
 .thanks{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.centerdiv{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    text-align: center;
+}
+.social{
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+.i-link{
+    text-decoration: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color:beige;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0px 0px 4px 2px rgb(144, 136, 136);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-link i {
     font-size: 30px;
-    margin-top: 20px;
+    transition: all 0.2s linear;
+}
+.i-link:hover i{
+    transform: scale(1.3);
+}
+.fa-instagram{
+    color: rgb(225, 14, 162);
+}
+.fa-github{
+    color: rgb(21, 18, 18);
+}
+.fa-linkedin-in{
+    color: rgb(15, 38, 168);
 }
 @media screen and (max-width: 480px){
  
+    .c{
+        height: 105 vh;
+    }
     .c-wrapper{
         flex-direction: column;
         padding: 0px 50px;
@@ -93,6 +139,10 @@ button{
         margin: 15px 0px;
         width: 100%;
         font-size: 15px;
+    }
+    .c-desc{
+        font-size: 15px;
+        margin-bottom: 0px;
     }
 
     form{
@@ -110,4 +160,20 @@ button{
         margin-top: 10px;
 
     }
+    .social{
+        font-size: 20px;
+    }
+    .i-link{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+       
+    }
+    .i-link i {
+        font-size: 25px;
+    }
+    .i-link:hover i{
+        transform: none;
+    }
+    
 }

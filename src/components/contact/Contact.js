@@ -55,11 +55,27 @@ const Contact = () => {
                 <input type="text" style={{backgroundColor: darkMode && "#333", color:darkMode && "white"}} placeholder="Email" name="user_email" />
                 <textarea placeholder="Message" name="message"cols="30" rows="5" style={{backgroundColor: darkMode && "#333",  color:darkMode && "white"}}></textarea>
                 <button>Submit</button>
-                <div className="thanks">
+                <span className="thanks">
                 {done && "Thank You..."}
-                </div>
+                </span>
             </form>
         </div>
+      </div>
+        <div className="social">Connect on -</div>
+      <div className="centerdiv">
+        <a className="i-link" href="https://www.facebook.com/sachinchamoli200" target="_blank" rel="noreferrer">
+        <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a className="i-link" href="https://www.instagram.com/_sa_chinn/" target="_blank" rel="noreferrer">
+        <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a className="i-link" href="https://github.com/Sachin-chamoli" target="_blank" rel="noreferrer">
+        <i class="fa-brands fa-github"></i>
+        </a>
+        <a className="i-link" href="https://www.linkedin.com/in/sachin-chamoli-b15653237" target="_blank" rel="noreferrer">
+        <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
       </div>
     </div>
   )
