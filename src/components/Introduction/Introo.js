@@ -11,13 +11,13 @@ const Introo = () => {
             <div className="i-title">
               <div className="i-title-wrapper">
                 <div className="i-title-item">Web Developer</div>
-                <div className="i-title-item">Student</div>
+                <div className="i-title-item">Sketch Artist</div>
                 <div className="i-title-item">Photographer</div>
                 <div className="i-title-item">Teacher</div>
               </div>
             </div>
             <p className="i-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nostrum veritatis velit. Minus deserunt ab nostrum ea voluptas neque odio, blanditiis quibusdam iure laboriosam sapiente maiores adipisci ullam esse expedita!
+              This is my portfolio that represent what I learn What I do and some of my recent projects .
             </p>
         </div>
       </div>

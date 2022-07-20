@@ -47,7 +47,7 @@ const Contact = () => {
         </div>
         <div className="c-right">
             <p className="c-desc">
-                <b>Lorem ipsum dolor sit amet consectetur.</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa numquam recusandae.
+                <b>I Will be delighted if you share your thoughts with me.</b>Fill in the details below for any Information ,suggestions related to work, projects or anything!! 
             </p>
             <form ref = {formRef} onSubmit={handleSubmit}>
                 <input type="text" style={{backgroundColor: darkMode && "#333", color:darkMode && "white"}} placeholder="Name" name="user_name" />

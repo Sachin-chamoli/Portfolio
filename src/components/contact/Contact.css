@@ -17,12 +17,10 @@
 }
 .c-left{
     flex: 1;
-    /* border: 2px solid blue; */
 }
 .c-right{
     flex: 1;
     display: flex;
-    /* border: 2px solid blue; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -44,7 +42,7 @@
     margin-right: 20px;
 }
 .c-desc{
-    font-weight: 200;
+    font-weight: 300;
 }
 
 form{
@@ -67,6 +65,7 @@ textarea{
     margin: 10px 0px;
     padding-left: 10px;
     font-size: 14px;
+    resize: none;
 }
 
 button{

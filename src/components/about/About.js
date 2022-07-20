@@ -16,10 +16,10 @@ const About = () => {
       </div>
       <div className="a-right">
         <h1 className="a-title">About Me</h1>
-        <p className="a-sub">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus necessitatibus repudiandae minus a voluptatibus similique accusamus neque odit impedit hic.
+        <p className="a-sub">My Name is Sachin. I am From Delhi I have done my graduation in Bsc (hons) Computer Science from Delhi University. 
         </p>
         <p className="a-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam nemo voluptas asperiores mollitia delectus officia non. Hic placeat eligendi nihil consequuntur quas consequatur rem, voluptas facilis, veniam voluptatibus dolore tenetur voluptates accusantium fugit pariatur atque alias incidunt! Voluptates, eum.
+            My interest is in frontend development. Currently I am learning web development and making projects to improve my skills. As of now I am focusing on frontend development but soon I will start with backend also and will become a Fullstack Developer. Apart from this I also have interest in making Portrait (Pencil Sketch) 
         </p>
         
       </div>
