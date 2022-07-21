@@ -122,10 +122,10 @@ button{
 .fa-linkedin-in{
     color: rgb(15, 38, 168);
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
  
     .c{
-        height: 105 vh;
+        /* height: 120vh; */
     }
     .c-wrapper{
         flex-direction: column;
@@ -175,4 +175,11 @@ button{
         transform: none;
     }
     
+}
+
+@media screen and (max-height: 780px) {
+
+     .c{
+        height: 110vh;
+    } 
 }

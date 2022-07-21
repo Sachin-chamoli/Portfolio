@@ -64,16 +64,16 @@ const Contact = () => {
         <div className="social">Connect on -</div>
       <div className="centerdiv">
         <a className="i-link" href="https://www.facebook.com/sachinchamoli200" target="_blank" rel="noreferrer">
-        <i class="fa-brands fa-facebook-f"></i>
+        <i className="fa-brands fa-facebook-f"></i>
         </a>
         <a className="i-link" href="https://www.instagram.com/_sa_chinn/" target="_blank" rel="noreferrer">
-        <i class="fa-brands fa-instagram"></i>
+        <i className="fa-brands fa-instagram"></i>
         </a>
         <a className="i-link" href="https://github.com/Sachin-chamoli" target="_blank" rel="noreferrer">
-        <i class="fa-brands fa-github"></i>
+        <i className="fa-brands fa-github"></i>
         </a>
         <a className="i-link" href="https://www.linkedin.com/in/sachin-chamoli-b15653237" target="_blank" rel="noreferrer">
-        <i class="fa-brands fa-linkedin-in"></i>
+        <i className="fa-brands fa-linkedin-in"></i>
         </a>
 
       </div>
