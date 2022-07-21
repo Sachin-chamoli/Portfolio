@@ -124,9 +124,6 @@ button{
 }
 @media screen and (max-width: 480px) {
  
-    .c{
-        /* height: 120vh; */
-    }
     .c-wrapper{
         flex-direction: column;
         padding: 0px 50px;
@@ -177,7 +174,7 @@ button{
     
 }
 
-@media screen and (max-height: 760px) {
+@media screen and (max-height: 650px) {
 
      .c{
         height: 115vh;
