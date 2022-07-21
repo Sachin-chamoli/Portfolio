@@ -177,9 +177,9 @@ button{
     
 }
 
-@media screen and (max-height: 780px) {
+@media screen and (max-height: 770px) {
 
      .c{
-        height: 110vh;
+        height: 115vh;
     } 
 }
