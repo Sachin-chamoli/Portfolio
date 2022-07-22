@@ -12,17 +12,47 @@ const Contact = () => {
 
     const formRef = useRef();
     const [done, setDone] = useState(false);
+    const [values, setvalues] =useState({
+      user_name:"",
+      user_subject: "",
+      user_email: "",
+      message: ""
+    });
 
+    const handleInput = (e) =>{
+      const name = e.target.name;
+      const value = e.target.value;
+      console.log(name, value);
+
+      setvalues({...values, [name] : value});
+    }
+    console.log("re rendered")
+    
     const handleSubmit = (e) =>{
         e.preventDefault();
-        emailjs.sendForm('service_z1usacm', 'template_i00ys89', formRef.current, 'khB8L42hrjBq7iULv')
-        .then((result) => {
+        if(values.user_name && values.user_email && values.message && values.user_subject)
+        {
+          setDone(true)
+          setTimeout(() => {
+            
+            setDone(false);
+          }, 2000);
+          emailjs.sendForm('service_z1usacm', 'template_i00ys89', formRef.current, 'khB8L42hrjBq7iULv')
+          .then((result) => {
             console.log(result.text);
-            setDone(true)
-        }, (error) => {
+          }, (error) => {
             console.log(error.text);
-        });
-
+          });
+        setvalues({
+          user_name:"",
+          user_subject:"",
+          user_email:"",
+          message:"",
+      });
+      }
+        else{
+          alert("Please fill the details")
+        }
     }
   return (
     <div id="C" className="c">
@@ -50,10 +80,10 @@ const Contact = () => {
                 <b>I Will be delighted if you share your thoughts with me.</b>Fill in the details below for any Information ,suggestions related to work, projects or anything!! 
             </p>
             <form ref = {formRef} onSubmit={handleSubmit}>
-                <input type="text" style={{backgroundColor: darkMode && "#333", color:darkMode && "white"}} placeholder="Name" name="user_name" />
-                <input type="text" style={{backgroundColor: darkMode && "#333", color:darkMode && "white"}} placeholder="Subject" name="user_subject" />
-                <input type="text" style={{backgroundColor: darkMode && "#333", color:darkMode && "white"}} placeholder="Email" name="user_email" />
-                <textarea placeholder="Message" name="message"cols="30" rows="5" style={{backgroundColor: darkMode && "#333",  color:darkMode && "white"}}></textarea>
+                <input type="text" style={{backgroundColor: darkMode && "#333", color:darkMode && "white"}} placeholder="Name" autoComplete="off" name="user_name" value={values.user_name} onChange={handleInput} />
+                <input type="text" style={{backgroundColor: darkMode && "#333", color:darkMode && "white"}} placeholder="Subject" autoComplete="off" name="user_subject" value={values.user_subject} onChange={handleInput}/>
+                <input type="email" style={{backgroundColor: darkMode && "#333", color:darkMode && "white"}} placeholder="Email" autoComplete="off" name="user_email" value={values.user_email} onChange={handleInput}/>
+                <textarea placeholder="message" autoComplete="off" name="message" cols="30" rows="5" style={{backgroundColor: darkMode && "#333",  color:darkMode && "white"}} value={values.message} onChange={handleInput}></textarea>
                 <button>Submit</button>
                 <span className="thanks">
                 {done && "Thank You..."}
