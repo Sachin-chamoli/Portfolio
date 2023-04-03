@@ -1,10 +1,18 @@
 import "./Intro.css"
 import Me from "../../img/me.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Introo = () => {
+  useEffect(()=>{
+    AOS.init({
+      duration: 1300,
+    });
+  },[])
   return (
     <div id="I" className='i'>
-      <div className="i-left">
+      <div data-aos="fade-up" className="i-left">
         <div className="i-left-wrapper">
             <h2 className='i-intro'>Hello, My name is</h2>
             <h1 className='i-name'>Sachin Chamoli</h1>
@@ -22,8 +30,8 @@ const Introo = () => {
         </div>
       </div>
       <div className="i-right">
-        <div className="i-bg">
-        <img src={Me} alt="" className="i-img" />
+        <div  className="i-bg">
+        <img src={Me} alt="" className="i-img"  />
         </div>
       </div>
     </div>
