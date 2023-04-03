@@ -2,9 +2,13 @@ import "./Intro.css"
 import Me from "../../img/me.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import { ThemeContext } from "../../context";
 
 const Introo = () => {
+  const theme = useContext(ThemeContext)
+  const darkMode = theme.state.darkMode;
+
   useEffect(()=>{
     AOS.init({
       duration: 1300,
@@ -15,8 +19,7 @@ const Introo = () => {
     const text = document.querySelector(".sec-text");
  const textLoad = () =>{
     setTimeout(() => {
-      text.textContent = "Frontend Development";
-      console.log("check")
+      text.textContent = "Web Development";
     }, 0);
     setTimeout(() => {
       text.textContent = "Book Reading";
@@ -60,7 +63,7 @@ const Introo = () => {
               </div> */}
               <div className="i-title">
                 <span className="text first-text">Interested in : </span>
-                <span className="text sec-text">Frontend Developer</span>
+                <span className={darkMode ? "text sec-textDark" : "text sec-text"}></span>
               </div>
             {/* </div> */}
             <p className="i-desc">

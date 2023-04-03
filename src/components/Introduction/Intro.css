@@ -42,22 +42,32 @@
     
 }
 .i-title .text{
-    color: rgb(10, 215, 10);
     font-size: 30px;
     font-weight: 600;
     position: relative;
 }
-.i-title .text.first-text{
-    color: black;
+.text.sec-text, .text.sec-textDark{
+    color: rgb(10, 215, 10);
 }
- .text.sec-text:before{
+ .text.sec-text::before{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height:100%;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(255, 255, 255) ;
+    border-left: 2px solid rgb(140, 125, 125);
+    animation: animate 7s steps(12) infinite;
+}
+.text.sec-textDark::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color:#222 ;
     border-left: 2px solid rgb(140, 125, 125);
     animation: animate 7s steps(12) infinite;
 }
@@ -133,5 +143,8 @@
     .i-title{
         width: 100%;
         text-align: start;
+    }
+    .i-title .text.first-text{
+        font-size: 16px;
     }
 }
